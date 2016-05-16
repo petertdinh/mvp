@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title>The Suite Life</title>   
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+    <body>
+    <h1><a ui-sref="landing">The Suite Life</a></h1>
+    <!--nav bar-->
+    <div>
+      <nav class='navigation navbar navbar-default'>
+        <div class='container-fluid'>
+          <ul class="nav navbar-nav navbar-left">
+            <li><a ui-sref="landing">Home</a></li>
+            <li><a ui-sref="about">About</a></li>
+            <li><a ui-sref="blog">Blog</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class='subscribe'><a>Subscribe</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--ui view-->
+    <div ui-view></div>
+    <!--footer-->
+    <div id="wrapper">
+		<div id="footer">Proudly powered by AngularJS</div>
+	</div>
+        <!--3rd party JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+        <!--main app module-->
+        <script src="app/landing/landingController.js"></script>
+        <script src="app/about/aboutController.js"></script>
+        <script src="app/app.js"></script>
+    </body>
+</html>

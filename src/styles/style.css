@@ -1,0 +1,9 @@
+h1{
+    font-family: 'Slabo 27px', serif;
+}
+#footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
